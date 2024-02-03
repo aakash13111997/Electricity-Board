@@ -17,6 +17,25 @@ Sprinboot is used as a middleware for database connection and api generation. Po
 **Database:** PostgreSQL
 
 ## Screenshots - 
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/1c86d7ca-3b2c-43a4-b0e7-cc3371412f09)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/2a829705-5c21-4d7d-94b8-bfaa5687f185)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/ba41e56a-85bf-4d41-a86f-4de5eb35ca55)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/b8eb45c7-d268-4024-ab94-a38f45c15a2c)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/c4aaef6c-42d9-4009-8a9b-7ae5acade5d0)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/cac3e97d-af2a-413e-a52c-3a96ce020e03)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/de497e2b-6423-4e93-b4eb-8bc8ee04a7af)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/cad9f9b9-1b4c-4771-9fd3-d7817276eea9)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/1fbaf12d-db86-4df2-ae64-6dc2fabc1bfd)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/d7b1a945-8151-4b48-a599-d76dfd7ed8a1)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/6338b243-30f4-47f2-9831-05f83ac34c50)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/6ad4efa1-5c6a-4068-b17f-27333dba51fb)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/a590674f-d590-4631-a8fb-1c769592c6fc)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/a706f98b-7699-4bfa-b96b-e24631c4cdca)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/7c0c2272-a51b-4f8d-b947-6f391b74b817)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/cc7cc1ef-ce30-4693-88ed-37ec7cbdc2d6)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/ae361f2f-3011-40e3-891d-57c0e1fd18f5)
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/3bab4bce-b2a1-4b1e-bb26-b2d52af21e17)
+
 ![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/2501aaf0-3220-42ce-bf18-9ab964ffff00)
 
 
