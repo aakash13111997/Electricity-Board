@@ -16,7 +16,9 @@ Sprinboot is used as a middleware for database connection and api generation. Po
 
 **Database:** PostgreSQL
 
-## Screenshots - Attached PPT with all the screenshots
+## Screenshots - 
+![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/2501aaf0-3220-42ce-bf18-9ab964ffff00)
+
 
 ## Development server
 
