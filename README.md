@@ -36,8 +36,6 @@ Sprinboot is used as a middleware for database connection and api generation. Po
 ![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/ae361f2f-3011-40e3-891d-57c0e1fd18f5)
 ![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/3bab4bce-b2a1-4b1e-bb26-b2d52af21e17)
 
-![image](https://github.com/aakash13111997/Electricity-Board/assets/42501181/2501aaf0-3220-42ce-bf18-9ab964ffff00)
-
 
 ## Development server
 
