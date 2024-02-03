@@ -1,0 +1,5 @@
+package com.example.bcgElectricity.entity;
+
+public class Reviewer_Details {
+
+}

@@ -1,0 +1,141 @@
+<nav style="text-align: center; " class="navbar navbar-expand-lg bg-dark ">
+    <div style="margin-left: 500px; color: green; font-size: 30px;" class="navbar-brand" href="#">ELECTRICITY CONSUMER BOARD</div>
+</nav>
+
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<div class="container" >
+  <div class="container">
+  <div class="col-md-6-offset-md-3" >
+    <hr>
+    <hr>
+    <hr>
+  <h1>Connection Detail</h1>
+  <form (ngSubmit) = "onSubmit()">
+    <div class="form-group" title="This is a disabled field">
+      <label>Applicant ID</label>
+      <input style="background-color: rgba(128, 128, 128, 0.307);"type="number" class="form-control" id="applicantId" [(ngModel)]="connection.applicantId" name="applicantId" disabled>
+    </div>
+
+    <div class="form-group" title="This is a disabled field">
+      <label>Date of Application</label>
+      <input style="background-color: rgba(128, 128, 128, 0.307);" type="date" class="form-control" name="dateOfApplication" [(ngModel)]="connection.dateOfApplication" name="dateOfApplication" disabled>
+    </div>
+
+    <div class="form-group" title="This is a disabled field">
+      <label>Govt ID Type</label>
+      <input style="background-color: rgba(128, 128, 128, 0.307);" type="text" class="form-control" name="govtIdType" [(ngModel)]="connection.govtIdType" name="govtIdType" disabled>
+    </div>
+
+    <div class="form-group" title="This is a disabled field">
+      <label>ID Number</label>
+      <input style="background-color: rgba(128, 128, 128, 0.307);" type="text" class="form-control" name="idNumber" [(ngModel)]="connection.idNumber" name="idNumber" disabled>
+    </div>
+
+    <div class="form-group">
+      <label>Applicant Name</label>
+      <input type="text" class="form-control" name="applicantName" [(ngModel)]="connection.applicantName" name="applicantName" >
+    </div>
+
+    <!-- Adding dropdown for Gender column values -->
+    <div class="form-group">
+      <label>Gender</label>
+      <select [(ngModel)]="gender" name="gender" (change)="changeGender($event)" class="form-control">
+        <option [ngValue]="gen" *ngFor="let gen of genderList">
+          {{gen}}
+        </option>
+      </select>
+    </div>
+    <!-- <div class="form-group">
+      <label>Gender</label>
+      <input type="text" class="form-control" name="gender" [(ngModel)]="connection.gender" name="gender"  >
+    </div> -->
+
+    <div class="form-group">
+      <label>District</label>
+      <input type="text" class="form-control" name="district" [(ngModel)]="connection.district" name="district" >
+    </div>
+
+    <div class="form-group">
+      <label>State</label>
+      <input type="text" class="form-control" name="state" [(ngModel)]="connection.state" name="state" >
+    </div>
+
+    <div class="form-group">
+      <label>Pincode</label>
+      <input type="text" class="form-control" name="pincode" [(ngModel)]="connection.pincode" name="pincode" >
+    </div>
+
+    <!-- Adding dropdown for Ownership column values -->
+    <div class="form-group">
+      <label>Ownership</label>
+      <select [(ngModel)]="ownership" name="ownership" (change)="changeOwnership($event)" class="form-control">
+        <option [ngValue]="owner" *ngFor="let owner of ownershipList">
+          {{owner}}
+        </option>
+      </select>
+    </div>
+    <!-- <div class="form-group">
+      <label>Ownership</label>
+      <input type="text" class="form-control" name="ownership" [(ngModel)]="connection.ownership" name="ownership" >
+    </div> -->
+
+    <!-- Adding dropdown for Category column values -->
+    <div class="form-group">
+      <label>Category</label>
+      <select [(ngModel)]="category" name="category" (change)="changeCategory($event)" class="form-control">
+        <option [ngValue]="cat" *ngFor="let cat of categoryList">
+          {{cat}}
+        </option>
+      </select>
+    </div>
+    <!-- <div class="form-group">
+      <label>Category</label>
+      <input type="text" class="form-control" name="category" [(ngModel)]="connection.category" name="category" >
+    </div> -->
+
+    <div class="form-group" title="LoadApplied value cannot be more than 200 KV">
+      <label>Load Applied</label>
+      <input type="number" class="form-control" name="loadApplied" [(ngModel)]="connection.loadApplied"*ngIf="checkValidLoadApplied()" >
+    </div>
+
+   <!-- Adding dropdown for Status column values -->
+    <div class="form-group">
+      <label>Status</label>
+      <select [(ngModel)]="status" name="status" (change)="changeStatus($event)" class="form-control">
+          <option [ngValue]="st" *ngFor="let st of statusList">
+            {{st}}
+          </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Reviewer ID</label>
+      <input type="text" class="form-control" name="reviewerId" [(ngModel)]="connection.reviewerId" name="reviewerId" >
+    </div>
+
+    <div class="form-group">
+      <label>Reviewer Name</label>
+      <input type="text" class="form-control" name="reviewerName" [(ngModel)]="connection.reviewerName" name="reviewerName" >
+    </div>
+
+    <div class="form-group">
+      <label>Reviewer Comments</label>
+      <input type="text" class="form-control" name="reviewerComments" [(ngModel)]="connection.reviewerComments" name="reviewerComments" >
+    </div>
+
+    <div class="form-group">
+      <label>Date of Approval</label>
+      <input type="date" class="form-control" name="dateOfApproval" [(ngModel)]="connection.dateOfApproval" name="dateOfApproval" >
+    </div>
+    
+    <!-- Submit button -->
+    <button style="margin:15px" class="btn btn-success"  type="submit">Submit</button>
+    <!-- Reset button -->
+    <button class="btn btn-success" (click)="ngOnInit()">Reset</button>
+
+  </form>
+  </div>
+  </div>
+  

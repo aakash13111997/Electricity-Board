@@ -1,0 +1,22 @@
+package com.example.bcgElectricity.service;
+
+import java.text.ParseException;
+import java.util.List;
+import com.example.bcgElectricity.dto.ElectricityBoardConsumerChartDto;
+import com.example.bcgElectricity.dto.ElectricityBoardConsumerDto;
+import com.example.bcgElectricity.entity.ElectricityBoardConsumer;
+
+public interface BcgElectricityService {
+
+	public List<ElectricityBoardConsumerChartDto> getConnectionsChart(String status);
+
+	public ElectricityBoardConsumer saveConnection(ElectricityBoardConsumer connection);
+
+	public ElectricityBoardConsumer updateConnection(ElectricityBoardConsumer connection, Long applicationId);
+
+	public List<ElectricityBoardConsumerDto> getConnectionListFilter(Long applicantId, String applicationDate,
+			String applicationDate2) throws ParseException;
+	
+	public List<ElectricityBoardConsumerDto> getConnectionList(Long applicantId, String applicationDate) throws ParseException;
+		
+}

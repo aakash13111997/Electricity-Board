@@ -1,0 +1,66 @@
+<nav style="text-align: center; " class="navbar navbar-expand-lg bg-dark ">
+    <div style="margin-left: 500px; color: green; font-size: 30px;" class="navbar-brand" href="#">ELECTRICITY CONSUMER BOARD</div>
+</nav>
+<!-- src/app/patient-search.component.html -->
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<div class="container" style="text-align: center;">
+  <div class="col-md-6-offset-md-3">
+    <hr>
+    <hr>
+    <hr>
+  <h1>Search Connection</h1>
+  <a style="color: rgb(86, 86, 86); font-size: x-large;"><marquee behavior="scroll" direction="left">
+    Welcome to Electricity Consumer Board Dashboard. Please find the connection details below based on Applicant ID and range of Date of Application. Click on the Applicant ID value of a connection detail to view the connection update page.Click on Connection Chart to open connection chart page. Applicant ID will not be used for searching connections when Date Range is selected.</marquee></a>
+
+  </div>
+<!-- Adding search filters below Applicant ID,From Date and To Date-->
+<div style="margin: 15px; padding: 0px">
+    <label title="Applicant ID value will not be used when Date Range is selected." for="input-large" class="btn2">Applicant ID</label>
+    <input type="number" id="applicantId" [(ngModel)]="applicantId"/>
+
+    <!-- used checkValidFromDate for From Date validation -->
+    <label title="Please select both the dates for getting Required Output" style="margin-left:60px"for="input-large" class="btn2">Date of Application(From)</label>
+    <input type="date" id="fromDate" (change)="checkValidFromDate()" [(ngModel)]="fromDate" />
+  
+    <!-- used checkValidFromDate for To Date validation -->
+    <label title="Please select both the dates for getting Required Output" style="margin-left:60px"for="input-large" class="btn2">Date of Application(To)</label>
+    <input type="date" id="toDate" (change)="checkValidToDate()" [(ngModel)]="toDate" />
+  
+</div>
+<!-- Search button -->
+<button style="margin:15px" class="btn btn-success" (click)="search()">Search</button>
+<!-- Reset button -->
+<button style="margin:15px" class="btn btn-success" (click)="reset()">Reset</button>
+<!-- Connection Chart button -->
+<button style="margin:15px" class="btn btn-success" (click) = "viewConnectionChart()">Connection Chart</button>
+</div>
+  
+  <div *ngIf="searchResults && searchResults.length > 0">
+    <!-- Used NGPrime for Table Formation and Pagination purpose -->
+    <p-table [columns]="cols" [value]="searchResults" [scrollable]="true" [paginator]="true" [rows]="10" [totalRecords]="searchResults.length"  class="table table-sm table-bordered table-dark">
+      <ng-template pTemplate="header">
+        <tr [style]="{'color': '#47A905'}">
+            <th *ngFor="let col of cols">{{col.header}}</th>  
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-data>
+        <tr>
+          <td style="width: 40px" *ngFor="let col of cols">
+            <span *ngIf=" col.field !== 'applicantId' ">{{data[col.field]}}</span>
+            <span *ngIf=" col.field === 'applicantId' " id="pointer">
+              <span >
+                <!-- Adding action button to route to Update Page when clicked on Applicant ID column -->
+                <a (click) ="updateConnection(data[col.field])">
+                  {{data[col.field]}}
+                </a>
+              </span>
+            </span>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+<div *ngIf="zeroFlag" style="color:red; font-size: x-large; text-align: center; margin:100px ;">No Record Found</div>
+  
